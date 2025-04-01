@@ -4,7 +4,8 @@
 :root{
     --bg-color: #F5F5F5;
     font-family: Roboto, serif;
-    --white-100: rgba(255,255,255,0.1)
+    --white-100: rgba(255,255,255,0.1);
+    color: #000000
 }
 @theme {
     --color-dark: #181517;
