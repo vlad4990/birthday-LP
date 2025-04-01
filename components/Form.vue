@@ -34,6 +34,8 @@
 
   const isError = ref(false)
 
+  const sendCount = ref(0)
+
   const sendform = () => {
     isLoading.value = false
     errorWho.value = null
@@ -72,10 +74,15 @@
     будет ночевать: ${fieldNight.value}
     пожелания: ${fieldWishes.value}`
     let url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(text)}`;
+    sendCount.value = Number(sendCount.value) + 1
     fetch(url).then(response => {
       isSend.value = true
     }).catch(() => {
-      isError.value = 'Ошибка, попробуй еще раз, или напиши Кристине'
+      if(Number(sendCount.value) < 2){
+        setTimeout(sendform, 500)
+      } else {
+        isError.value = 'что-то тупит... , нажми еще раз, или напиши Кристине'
+      }
     });
   }
 </script>
