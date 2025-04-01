@@ -112,6 +112,6 @@
     <div class="mx-5 mt-10 text-2xl whitespace-break-spaces">Как только мы определимся<br/>с площадкой я скину тебе ссылку на тг канал<br/>с информацией.
     </div>
 <!--    <NuxtImg width="221" height="306" src="/assets/img/little-kristina.png" format="webp" loading="lazy" class="-mt-15 ml-auto"/>-->
-    <img src="/assets/img/little-kristina.png" loading="lazy" class="w-[221px] h-[306px] -mt-15 ml-auto"/>
+    <img src="/assets/img/little-kristina.webp" loading="lazy" class="w-[221px] h-[306px] -mt-15 ml-auto"/>
   </div>
 </template>
