@@ -10,6 +10,8 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
-
+  app:{
+    baseURL: '/birthday-LP'
+  },
   modules: ['@nuxt/image']
 })
